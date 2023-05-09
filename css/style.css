@@ -1138,7 +1138,7 @@ footer .copy a {
 /*#######################################*/
 @media (max-height: 650px) { 
     .home {
-        min-height: 132vh;
+        min-height: 112vh;
         background-position: right 8% bottom 0%;
     }
 }
