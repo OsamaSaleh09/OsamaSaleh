@@ -141,7 +141,7 @@ body {
 /*end heading*/
 /*start loading*/
 .cont-loading {
-    background-image: linear-gradient( 20deg ,rgba(9, 0, 44, 0.7),rgba(201, 138, 82, 0.7));
+    background-color: rgba(9, 0, 44, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     width: 100%;
