@@ -114,18 +114,6 @@ function scrollUp(){
     })
 }
 //end arrow-up
-//links nav
-//let links   = document.querySelectorAll("nav ul li a");
-//links.forEach((link) => {
-//    link.addEventListener("click", (e) => {
-//        e.preventDefault();
-//        let currentId = e.target.attributes.href.value;
-//        let section = document.querySelector(currentId);
-//        section.scrollIntoView({
-//            behavior:"smooth",
-//        })
-//    }) 
-//})
 // start typing home
 let typeTextSpan    = document.getElementsByClassName("text-typing")[0],
     cursor          = document.getElementsByClassName("cursor")[0],
