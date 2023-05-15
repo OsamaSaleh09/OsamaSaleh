@@ -1054,7 +1054,7 @@ footer .copy a {
         font-size: .6rem;
     }
     .home {
-        background-position: right 8% top 0%;
+        background-position: right 10% top 0%;
     }
     .services .box-ser,
     .projects .box {
@@ -1130,7 +1130,7 @@ footer .copy a {
 @media (max-height: 650px) { 
     .home {
         min-height: 120vh;
-        background-position: right 8% ;
+        background-position: right 8% top 0% ;
     }
 }
 @media (max-height: 500px) { 
@@ -1154,10 +1154,31 @@ footer .copy a {
 }
 @media (min-height: 900px) { 
     .home {
-        background-position: right 15% top 0%;
+        min-height: 80vh;
+        background-position: right 10% top 0%;
     }
     .home .identification {
-        margin: 50vh 0 0 0;
+        margin: 30vh 0 0 0;
+        margin-right: auto;
+    }
+}
+@media (min-height: 1300px) { 
+    .home {
+        min-height: 60vh;
+        background-position: right 10% top 0%;
+    }
+    .home .identification {
+        margin: 20vh 0 0 0;
+        margin-right: auto;
+    }
+}
+@media (min-height: 1700px) { 
+    .home {
+        min-height: 50vh;
+        background-position: right 10% top 0%;
+    }
+    .home .identification {
+        margin: 20vh 0 0 0;
         margin-right: auto;
     }
 }
