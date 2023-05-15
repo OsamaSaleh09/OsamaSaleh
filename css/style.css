@@ -8,7 +8,7 @@
 html {
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
-    scrollbar-color: #09002c #c98a52;
+    scrollbar-color: #09002c #ce9f75;
     scrollbar-width: thin
 }
 body {
@@ -22,7 +22,7 @@ body {
     src: url(../font/Montserrat.ttf);
 }
 :root {
-    --grad : linear-gradient(80deg, #09002c,#c98a52);
+    --grad : linear-gradient(80deg, #09002c,#ce9f75);
     --back-clr :#09002c;
     --light : #fdf4e8;
     --border: 1px solid #332315;
@@ -35,7 +35,7 @@ body {
     width: 5px;
 }
 ::-webkit-scrollbar-track { 
-    background-color: #c98a52
+    background-color: #ce9f75
 }
 ::-webkit-scrollbar-thumb { 
     background-image: var(--grad);
@@ -60,7 +60,7 @@ body {
     margin: auto
 }
 *::selection {
-    background-color: #c98a52;
+    background-color: #ce9f75;
     color: var(--light)
 }
 .wave {
@@ -112,18 +112,6 @@ body {
 .wave:active .waves{
   top: -115px;
 }
-.spikes {
-    position: relative;
-}
-.spikes::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 30px;
-    background-image: linear-gradient(135deg, #fdf4e8 25%, transparent 25%), linear-gradient(225deg, #fdf4e8 25%, transparent 25%);
-    background-size: 30px 30px
-}
 /*global*/
 /*start heading*/
 .heading {
@@ -152,7 +140,7 @@ body {
     align-items: center;
     z-index: 999
 }
- .cont-loading .loading {
+.cont-loading .loading {
     width: 100px;
     height: 100px;
     position: relative
@@ -322,7 +310,7 @@ body {
     top: -55px
 }
 .back-nav {
-    background-image: linear-gradient(80deg, rgba(9, 0, 44, 0.8),rgba(201, 138, 82, 0.8));
+    background-image: linear-gradient(80deg, rgba(9, 0, 44, 0.8),rgba(206, 159, 117, 0.8));
     box-shadow: 0 4px 30px rgba(9, 0, 44, 0.9);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -340,7 +328,7 @@ body {
     top: -80px;
     z-index: -1;
     overflow: hidden;
-    background-position: right 10% bottom 0%;
+    background-position: right 10%;
 }
 .home::before {
     content: "";
@@ -375,7 +363,7 @@ body {
     min-height: 150px
 }
 .home .identification  h1 span {
-    color: #c98a52
+    color: #ce9f75
 }
 .home .identification .cursor {
     display: inline-block;
@@ -427,7 +415,7 @@ body {
 .services,
 .projects{
     background-image: var(--grad);
-    padding: 3em 0 5em
+    padding: 2em 0 5em
 }
 .services h1,
 .projects h1 {
@@ -480,9 +468,9 @@ body {
     padding: 3em 0 5em
 }
 .skills .box {
-    width: 210px;
+    width: 300px;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 1.5em;
     border-radius: var(--radius);
     transition: var(--trans);
     box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
@@ -506,9 +494,6 @@ body {
     overflow: hidden;
     cursor: pointer;
     min-height: 200px
-}
-.projects .box:hover {
-    transform: translateY(-.5em)
 }
 .projects .cover-img {
     width: 100%;
@@ -596,10 +581,10 @@ body {
     right: -50px
 }
 .projects .box:hover .links a:nth-of-type(1){
-    left: 20px
+    left: 15px
 }
 .projects .box:hover .links a:nth-of-type(2){
-    right: 20px
+    right: 15px
 }
 .projects .box .links a:hover {
     transform: scale(1.1);
@@ -761,7 +746,7 @@ footer .boxs .box .social li a i {
 }
 footer .boxs .box p {
     padding-top: 2em;
-    line-height: 1.6;
+    line-height: 2;
     color: var(--light);
     font-size: 1em;
 }
@@ -797,11 +782,12 @@ footer .footer-gallery {
     justify-content: flex-end;
     align-items: center;
     flex-flow: wrap;
-    gap: .5em
+    gap: .5em;
+    padding-top: 4em
 }
 footer .footer-gallery a {
     width: 110px;
-    height: 110px;
+    height: 90px;
     overflow: hidden;
     border-radius: var(--radius);
     box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%)
@@ -888,16 +874,14 @@ footer .copy a {
 }
 @media(max-width: 992px ) {
     /*start home*/
-    .home {
-        background-position: right 10% bottom 0%;
-    }
-     .home .identification {
+    .home .identification {
          width: 80%
     }
     .contact-footer .container form{
         width: 80%
     }
     .services .box-ser,
+    .skills .box,
     .projects .box{
         width: 48%
     }
@@ -1017,7 +1001,7 @@ footer .copy a {
     }
     /*start home*/
     .home {
-        background-position: right 10% bottom 0%;
+        background-position: right 10% top 0%;
         min-height: calc(100vh + 62px)
     }
     .home::before {
@@ -1069,7 +1053,7 @@ footer .copy a {
         font-size: .6rem;
     }
     .home {
-        background-position: right 8% bottom 0%;
+        background-position: right 8% top 0%;
     }
     .services .box-ser,
     .projects .box {
@@ -1078,6 +1062,9 @@ footer .copy a {
     }
     .contact-footer .container form{
         width: 100%;
+    }
+     .skills .box {
+        width: 100%
     }
 }
 @media (max-width: 480px ) {
@@ -1107,7 +1094,7 @@ footer .copy a {
         margin: auto
     }
     footer .box:nth-of-type(2) {
-        margin-top: 2em;
+        margin-top: 2em !important;
         padding-left: 0 !important
     }
     footer .box .line {
@@ -1138,23 +1125,35 @@ footer .copy a {
 /*#######################################*/
 @media (max-height: 650px) { 
     .home {
-        min-height: 112vh;
-        background-position: right 8% bottom 0%;
+        min-height: 120vh;
+        background-position: right 8% ;
     }
 }
-@media (max-height: 400px) { 
+@media (max-height: 500px) { 
     .home {
-        min-height: 190vh;
-        background-position: right 10% bottom 0%;
+        height: 600px;
+        background-position: right 10% top 0%;
+    }
+     .home .identification  h2:first-child {
+        font-size: 1.5rem
+    }
+    .home .identification  h2:nth-of-type(2) {
+        font-size: 2.5rem
+    }
+    .home .identification .cursor {
+        width: 2px;
+        height: 30px;
+    }
+    .home .identification p {
+        font-size: .9rem
     }
 }
 @media (min-height: 900px) { 
     .home {
-        min-height: 70vh;
-        background-position: right 0% bottom 0%;
+        background-position: right 15% top 0%;
     }
     .home .identification {
-        margin: 30vh 0 0 0;
+        margin: 50vh 0 0 0;
         margin-right: auto;
     }
 }
